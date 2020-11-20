@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-const Table = ({ restaurantarray }) => {
+const Table = ({ restaurantArray }) => {
 
     return (
         <table id='table'>
@@ -16,14 +16,14 @@ const Table = ({ restaurantarray }) => {
                 </tr>
             </thead>
             <tbody>
-                { (restaurantarray.length > 0) ? restaurantarray.map( (restaurantarray, index) => {
+                { (restaurantArray.length > 0) ? restaurantArray.map( (restaurantArray, index) => {
                     return (
                         <tr key={ index }>
-                            <td className='cell'>{ restaurantarray.name }</td>
-                            <td className='cell'>{ restaurantarray.city }</td>
-                            <td className='cell'>{ restaurantarray.state }</td>
-                            <td className='cell'>{ restaurantarray.telephone }</td>
-                            <td className='cell'>{ restaurantarray.genre }</td>
+                            <td className='cell'>{ restaurantArray.name }</td>
+                            <td className='cell'>{ restaurantArray.city }</td>
+                            <td className='cell'>{ restaurantArray.state }</td>
+                            <td className='cell'>{ restaurantArray.telephone }</td>
+                            <td className='cell'>{ restaurantArray.genre }</td>
                         </tr>
                     )
                 }) : <tr><td colSpan='4'>Loading...</td></tr>}
