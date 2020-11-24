@@ -22,8 +22,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const apiURL = "https://code-challenge.spectrumtoolbox.com/api/restaurants";
-    fetch(apiURL, { headers: {"Authorization": "Api-Key q3MNxtfep8Gt"}})
+    const apiURL = "https://xxxxxxxxxxxxxxx.com/api/xxxxxxxxxxxx";
+    fetch(apiURL, { headers: {"Authorization": "Api-Key xxxxxxxxxxx"}})
     .then((response) => response.json())
     .then(restaurantArray => this.setState({ restaurantArray }))
 
